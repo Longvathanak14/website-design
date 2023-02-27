@@ -1,0 +1,135 @@
+:root{
+    --brown:#522E2D;
+    --brown2:#481c1a;
+    --brown-red:#992E2B;
+    --text-brown: #C0C0C0;
+    --color-default:#004f83;
+    --color-second:#0067ac;
+    --color-white:#fff;
+    --color-body:#e4e9f7;
+    --color-light:#e0e0e0;
+}
+
+.btn-brown{
+    background-color: var(--brown);
+    color: white;
+}
+.btn-brown:hover{
+    background-color: #472524;
+    color: white;
+}
+.btn-brown-red{
+  background-color: var(--brown-red);
+  color: white;
+}
+.btn-brown-red:hover{
+  background-color: #a33e3a;
+  color: white;
+}
+.btn-white-light{
+  background-color: #0600002d;
+  color: black;
+}
+.btn-white-light:hover{
+  background-color: #06000060;
+  color: black;
+}
+
+.bg-brown{
+    background-color: var(--brown);
+}
+.bg-brown-red{
+  background-color: var(--brown-red);
+}
+.text-brown{
+    color: var(--brown);
+}
+.text-brown-red{
+  color: var(--brown-red);
+}
+.trany{
+            
+  animation: trany 0.2s ease-in;
+}    
+@keyframes trany{
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80%{
+    opacity: 0.5;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.tranx{
+            
+  animation: tranx 0.2s ease-in;
+}    
+@keyframes tranx{
+  0%{
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  80%{
+    opacity: 0.5;
+  }
+
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+/* //pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li{
+  list-style: none;
+  padding: 6px;
+  /* margin: 5px; */
+  flex-shrink: 0;
+  text-align: center;
+  
+  /* border: 1px solid #999; */
+  color: #999;
+}
+.pagination li.active{
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+}
+.pagination li a{
+  text-decoration: none;
+  padding: 0 6px;
+  color: inherit;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* body{
+  --scroll-bar: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+} */
+
+@media (min-width: 300px) {
+  .d-xs-none{
+    display: none;
+  }
+  .d-xs-block{
+    display: block;
+  }
+}
