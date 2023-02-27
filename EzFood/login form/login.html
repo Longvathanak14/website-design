@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="form-box">
+                <div class="user-box ">
+                    <h1 class="h1"><i>EzFood</i></h1>
+                    <span>Easy delivery for order your fav food</span>
+                    <form action="post">
+                        <input type="text" name="name" class="form-control" placeholder="username"/>				
+							<span class="text-danger"></span>
+                        <input type="password" name="password" class="form-control" placeholder="Password" />
+							<span class="text-danger"></span>
+					   <button type="subit" class="btn btn-primary"><a href="../main-page/welcome.html">LOGIN</a></button>
+                    </form>
+                   
+                </div>
+                <div class="admin-box hidden ">
+                    <h1 class="h1"><i>EzFood</i></h1>
+                    <span>Easy delivery for order your fav food</span>
+                    <form>
+                        <input type="text" placeholder="adminname" required>
+                        <input type="password" placeholder="password" required>
+                        <button><a href="../main-page/welcome.html">LOGIN</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="con-box left">
+                <button id="user">User</button>
+            </div>
+            <div class="con-box right">
+                <button id="admin">Admin</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
