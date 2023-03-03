@@ -362,7 +362,7 @@
                             <div class="row ">
                                 <div class="col-12 p-5 bg-white">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="row">
                                                 <div class="d-flex justify-content-center">
                                                     <div class="text-end mx-2"><img src="../../image/kh.svg" alt="" width="90px"></div>
@@ -383,60 +383,201 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 px-4">                  
-                                            <div>
-                                                <input type="text" placeholder="Search...." class="form-control">
-                                            </div>                       
-                                            <div>
-                                                <h4 class="fw-bolder my-4">Cambodia's</h4>
-                                               <div>
-                                                   <a href="#" class="btn btn-outline-danger m-1">World Haritage</a>
-                                                   <a href="#" class="btn btn-outline-danger m-1">Art</a>
-                                                   <a href="#" class="btn btn-outline-danger m-1">Fastivals and Events</a>
-                                                   <a href="#" class="btn btn-outline-danger m-1">Temple</a>
-                                                   <a href="#" class="btn btn-outline-danger m-1">Tour</a>
-                                                   <a href="#" class="btn btn-outline-danger m-1">Tranditional</a>
-                                               </div>                           
-                                            </div>
-                                            <div class="sponsor"></div>                                          
-                                        </div> 
                                     </div>
                                 </div>                 
                             </div>
-                            <div class="row">
-                                <div class="col-12 bg-white py-2 px-5">
-                                        <div class="row py-5 bg-white text-light d-flex ">
-                                            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6  text-center">
-                                                <div class="image">
-                                                    <img src="../../image/poster/angkor.jpg" alt="" width="100%">
-                                                </div>  
-                                            </div>
-                                            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6 text-dark p-lg-4 mt-sm-2 ">
-                                                <h2 class="text-brown">RELIGION</h2>
-                                                <p class="mx-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis deserunt eum praesentium recusandae, temporibus facere non, accusantium aliquid vitae labore voluptas voluptatibus a laboriosam inventore expedita dolores dolor exercitationem laborum?</p>
-                                                <div class="text-end px-4">
-                                                  <a href="../Blog/blog-category-detail.html" class="btn btn-outline-danger"> Read more</a>
-                                                </div>       
-                                            </div>
-                                        </div>
-                                        <div class="row py-5 bg-white text-light d-flex ">
-                                            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6  text-center">
-                                                <div class="image">
-                                                    <img src="../../image/poster/angkor.jpg" alt="" width="100%">
-                                                </div>  
-                                            </div>
-                                            <div class="col-xs-12  col-sm-12 col-md-12  col-lg-6 text-dark p-lg-4 mt-sm-2 ">
-                                                <h2 class="text-brown">RELIGION</h2>
-                                                <p class="mx-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis deserunt eum praesentium recusandae, temporibus facere non, accusantium aliquid vitae labore voluptas voluptatibus a laboriosam inventore expedita dolores dolor exercitationem laborum?</p>
-                                                <div class="text-end px-4">
-                                                  <a href="../Blog/blog-category-detail.html" class="btn btn-outline-danger"> Read more</a>
-                                                </div>       
-                                            </div>
+                            <div class=" row bg-light shadow rounded-3 p-0">
+                                <table class="table table-responsive-sm  table-hover align-middle mb-0 ">
+                                    
+                                    <div class="pt-breadcrumb d-flex justify-content-between  px-2">
+                                        <div class="input-group w-50 my-3">
+                                            <h3>Blog list of category</h3>
                                         </div>
                                         
+                                        <div class="items-controller  d-flex text-center my-3">
+                                            <div>
+                                            <span class="fs-7 mx-2">Show in row</span> 
+                                            </div>
+                                            <div>
+                                                <select name="" id="itemperpage" class="form-select">
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="08" selected>08</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                            </select>               
+                                            </div>
+                                                            
+                                        </div>
+                                    </div>
+                                    <thead class=" bg-light">
+                                    
+                                    <tr>
+                                        <th class="fs-7 text-black">ID</th>
+                                        <th class="fs-7 text-black">Image</th>
+                                        <th class="fs-7 text-black">Blog Title</th>
+                                        <th class="fs-7">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">1</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/angkor.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Angkor Wat Area</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash "></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">2</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/bg2.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Lkhoan Khoal</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">1</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/angkor.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Angkor Wat Area</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash "></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">2</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/bg2.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Lkhoan Khoal</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">1</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/angkor.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Angkor Wat Area</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash "></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">2</span> 
+                                        </td> 
+                                        <td>
+                                            <span><img
+                                                src="../../image/poster/bg2.jpg"
+                                                alt=""
+                                                style="width: 45px; height: 45px"
+                                                class="rounded-3 object-fit"
+                                                />
+                                            </span>
+                                        </td> 
+                                        <td>
+                                            <span class="fs-7 fw-bold">Lkhoan Khoal</span>
+                                        </td>                                   
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../main-category/main_category_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-dark btn-sm rounded-pill" href="../main-category/main_category_edit.html"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>    
+                                <div class="d-flex justify-content-end mt-3 px-2">
+                    
+                                <div class="bottom-field">
+                                    <ul class="pagination ">
+                                      <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                                        <!-- page number here -->
+                                      <li class="next"><a href="#" id="next">&#155;</a></li>
+                                    </ul>
                                 </div>
-                               
-                            </div>                                            
+                            </div> 
+                            </div>                                                 
                         </div>
                         
                    </div>
@@ -495,6 +636,7 @@
     <script src="../../style/bootstrap.bundle.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="../../style/js/sb-admin-2.min.js"></script>
+    <script src="../../style/js/style_admin.js"></script>
 
 
 </body>
