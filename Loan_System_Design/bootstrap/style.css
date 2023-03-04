@@ -1,0 +1,38 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination li{
+  list-style: none;
+  padding: 6px;
+  /* margin: 5px; */
+  flex-shrink: 0;
+  text-align: center;
+  
+  /* border: 1px solid #999; */
+  color: #999;
+}
+.pagination li.active{
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+
+}
+.pagination li a{
+  text-decoration: none;
+  padding: 0 6px;
+  color: inherit;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+i.fa-edit{color: lime;}
+i.fa-trash{color: red;}
+body{
+  --scroll-bar: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+   
+    <link rel="stylesheet" href="../../icon/themify-icons.css">
+    <title>Dashboard</title>
+    <style type="text/css">
+        @page { size: 21cm 29.7cm; margin: 2cm }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-content-center">
+        <div class="col-10 ">
+        <div class="row">
+            <div class="col-12 my-3 d-flex justify-content-between">
+                <div>
+                    <a class="btn btn-dark"    href="./pay-list.html">Back</a>
+                </div>
+                <div>
+                    <a class="btn btn-secondary" href="#"><i class="ti-print"></i>Print</a>
+                </div>
+            </div>
+         <div class="col-12 mb-5 ">
+            <div class="card shadow-sm py-5">
+                <div class="card-head">
+                      <div class="row">
+                          <div class="col-12 d-flex justify-content-center ">
+                              <div class="d-flex flex-column align-items-center">
+                                  <span class="fw-bold fs-5">ព្រះរាជាណាចក្រកម្ពុជា</span>
+                                  <span class="fw-bold fs-5">ជាតិ សាសនា ព្រះមហាក្សត្រ</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12​​ d-flex my-6">
+                              <div class="col-3​">
+                                  <div class="d-flex flex-column align-items-center text-center mx-5 ">
+                                      <div class="upload rounded-circle ">
+                                          <img src="../../image/logo2.jfif" width = 150 height = 150 alt="Profile" class="rounded-circle object-fit">
+                                         
+                                        </div>
+                                          <span class="fw-bold mt-3">ក្រុមហ៊ុនបញ្ចាំ</span>
+                                          <span class="fs-7 "><i>Tel :</i> 0888737756</span>
+                                        
+                                  </div>
+                                  
+                              </div>
+                              <div class="col-6 d-flex align-items-end justify-content-center ">
+                                  <span class="fw-bold fs-5">កាលវិភាគបង់ប្រាក់</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row ">
+                          <div class="col-12 d-flex flex-wrap justify-content-center  pt-4 mx-3">
+                              <div class="col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold ">លេខកម្ចី :</i> Ch6786</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">ឈ្មោះអ្នកខ្ចី :</i> ស៊ុយ ទ្រី​ Suy Try</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">របៀបសង :</i> ខែ​</span>
+                                  
+                              </div>
+                              <div class="col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">ទឹកប្រាក់កម្ចី :</i> ១០០០​ ដុល្លារ</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold ">កាលវេលានៃការខ្ចី :</i> 10-01-2023</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">រយះពេលខ្ចី :</i> 12ខែ​</span>
+                                  
+                              </div>
+                              
+                              <div class="col-sm-6 col-md-6 col-lg-4 d-flex flex-column">
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold ">រូបិយប័ណ្ណ :</i> ដុល្លារ​ USD </span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">កាលដល់កំណត់នៃការខ្ចី :</i> 10-01-2023</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold  ">ការប្រាក់ :</i> 7%</span>
+                                  <span class="fs-6 mt-2"><i class="fs-6 fw-bold ">កម្ចីលើកទី :</i> 1</span>
+                                 
+                              </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="card-body">
+                      <table class="table-bordered w-100  align-middle mb-3 bg-white rounded-3 border-end border-start">                   
+                          <thead class=" text-center ">
+                          
+                          <tr class="">
+                              <th class="fs-7 p-2">ល.រ</th>
+                              <th class="fs-7">ថ្ងៃ</th>
+                              <th class="fs-7">ថ្ងៃទី</th>
+                              <th class="fs-7">ចំនួនថ្ងៃ</th>
+                              <th class="fs-7">ប្រាក់ដើម</th>
+                              <th class="fs-7">ការប្រាក់</th>
+                              <th class="fs-7">ប្រាក់សរុបត្រូវបង់</th>
+                              <th class="fs-7">ប្រាក់ដើមនៅសល់</th>
+                              <th class="fs-7">ផ្សេងៗ</th>
+                          </tr>
+                          </thead>
+                          <tbody class="text-center p-3">
+                          
+                          <tr class=" bg-white">
+                              <td>
+                              <span>1</span>
+                              </td>  
+                              <td>
+                                  <span class="fs-7 ">ច័ន្ទ</span>
+                              </td>    
+                              <td>
+                              
+                                  
+                                  <span class="fs-7 ">10-02-2023</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7 ">30</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                              </td>    
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                              </td>        
+                              <td class="p-1">                 
+                              
+                              
+                              
+                              </td>
+                          </tr>
+                          <tr class=" bg-white">
+                              <td>
+                              <span>2</span>
+                              </td>  
+                              <td>
+                                  <span class="fs-7 ">អង្គារ៍</span>
+                              </td>    
+                              <td>
+                              
+                                  
+                                  <span class="fs-7 ">10-03-2023</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7 ">30</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                              </td>    
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                              </td>        
+                              <td class="p-1">                 
+                              
+                            
+                              
+                              </td>
+                          </tr>
+                          <tr class=" bg-white">
+                              <td>
+                              <span>3</span>
+                              </td>  
+                              <td>
+                                  <span class="fs-7 ">ច័ន្ទ</span>
+                              </td>    
+                              <td>
+                              
+                                  
+                                  <span class="fs-7 ">10-02-2023</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7 ">30</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                              </td>    
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                              </td>        
+                              <td class="p-1">                 
+                              
+                             
+                              
+                              </td>
+                          </tr>
+                          <tr class=" bg-white">
+                              <td>
+                              <span>1</span>
+                              </td>  
+                              <td>
+                                  <span class="fs-7 ">ច័ន្ទ</span>
+                              </td>    
+                              <td>
+                              
+                                  
+                                  <span class="fs-7 ">10-02-2023</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7 ">30</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                              </td>
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                              </td>    
+                              <td>
+                                  <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                              </td>        
+                              <td class="p-1">                 
+                              
+                             
+                              
+                              </td>
+                          </tr>
+                          <tr class=" bg-white">
+                            <td>
+                            <span>1</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                            
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>2</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">អង្គារ៍</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-03-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                          
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>3</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                           
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>1</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                           
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>1</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                            
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>2</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">អង្គារ៍</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-03-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                          
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>3</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                           
+                            
+                            </td>
+                        </tr>
+                        <tr class=" bg-white">
+                            <td>
+                            <span>1</span>
+                            </td>  
+                            <td>
+                                <span class="fs-7 ">ច័ន្ទ</span>
+                            </td>    
+                            <td>
+                            
+                                
+                                <span class="fs-7 ">10-02-2023</span>
+                            </td>
+                            <td>
+                                <span class="fs-7 ">30</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>83.33</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>70</span>
+                            </td>
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>153.33</span>
+                            </td>    
+                            <td>
+                                <span class="fs-7"><i class="mx-1 fw-bold">$</i>916.67</span>
+                            </td>        
+                            <td class="p-1">                 
+                            
+                           
+                            
+                            </td>
+                        </tr>
+                          
+                        
+                          
+                          
+                          </tbody>
+                          <tfoot class="text-center ">
+                              <tr class="p-2">
+                                  <td class="fs-7 p-2" colspan="3">
+                                      <span class="fs-7"><i class="mx-1 fw-bold">សរុប</i></span>
+                                  </td>
+                                  <td >
+                                      <span class="fs-7 fw-bold">360</span>
+                                  </td>
+                                  <td >
+                                      <span class="fs-7 fw-bold"><i class="mx-1 fw-bold">$</i>1000</span>
+                                  </td>
+                                  <td >
+                                      <span class="fs-7 fw-bold"><i class="mx-1 fw-bold">$</i>347.53</span>
+                                  </td>
+                                  <td >
+                                      <span class="fs-7 fw-bold"><i class="mx-1 fw-bold">$</i>1347.53</span>
+                                  </td>
+                                  <td >
+                                      <span class="fs-7 fw-bold"><i class="mx-1 fw-bold">$</i>0</span>
+                                  </td>
+                                  <td class="p-1">                 
+                                  
+                                  </td>
+                              </tr>
+                          </tfoot>
+                    </table>
+                </div>
+                <div class="card-footer bg-white border-0 d-flex justify-content-between mb-5 mx-3" >
+                    <div>
+                        <span>ស្នាមមេដៃនិងឈ្មោះម្ចាស់កម្ចី</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mb-5">
+                        <span class="mb-2">...............ថ្ងៃ............ទី.........ខែ.............ឆ្នាំ.......</span>
+                        <span>ស្នាមមេដៃនិងឈ្មោះអ្នកខ្ចី</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
