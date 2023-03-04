@@ -11,6 +11,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../style/bootstrap.bundle.min.js"></script>
     <title>Contact</title>
+    <style>
+        input {
+  text-align: center;  
+  border: 1px solid #6C757D;
+} 
+
+.number-input input[type="number"] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  appearance: textfield !important;
+  }
+
+  .number-input input[type=number]::-webkit-inner-spin-button,
+  .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  .number-input {
+  margin-bottom: 20px;
+  padding-top: 20px !important;
+  }
+    </style>
 </head>
 <body>
     <!-- <div class="background"></div> -->
@@ -90,6 +112,29 @@
                             <td class=" ">  
                                 <span class="text-success ">
                                     <i class="fa-solid fa-dollar-sign"></i>200
+                                </span>
+                            </td>
+                            <td class="align-middle">
+                                <div class="d-flex flex-row">
+                                  <button class="btn btn-link px-2 text-dark"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                  </button>
+              
+                                  <input  min="0" name="quantity" value="2" type="number"
+                                    class="form-control" style="width: 50px;" />
+              
+                                  <button class="btn btn-link px-2 text-dark"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                  </button>
+                                </div>
+                              </td>
+                            
+                            
+                            <td>
+                                <span class="text-success ">
+                                    <i class="fa-solid fa-dollar-sign"></i>400
                                 </span>
                             </td>
                         </tr>
