@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ezzhop</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-nav">
+                <div class="left">
+                    <span>Welcome to Ezzhop!</span>
+                </div>
+                <div class="right">
+                    <div class="dropdown-setting ">
+                        <button onclick="settingFunction()" class="dropbtn-setting">
+                            <span>Setting</span>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div id="mydropdown-setting" class="dropdown-content-setting">
+                            <a href="#">
+                                <span>My account</span>
+                            </a>
+                            <a href="#">
+                                <span>Checkout</span>
+                            </a>
+                            <a href="#">
+                                <span>Sign in</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-currency ">
+                        <button onclick="currencyFunction()" class="dropbtn-currency">
+                            <span>USD $</span>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div id="mydropdown-currency" class="dropdown-content-currency">
+                            <a href="#">
+                                <span>USD $</span>
+                            </a>
+                            <a href="#">
+                                <span>Reil ៛</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown active">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <img src="./image/uk.png" width="20px" alt="">
+                            <span>English</span>
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                        <div id="mydropdown" class="dropdown-content">
+                            <a href="#">
+                                <img src="./image/uk.png" width="20px" alt="">
+                                <span>English</span>
+                            </a>
+                            <a href="#">
+                                <img src="./image/cam.png" width="20px" alt="">
+                                <span>Khmer</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header-top-mobile">
+                <div class="top-mobile">
+                    <span>Welcome to Ezzhop!</span>
+                </div>
+                <div class="mid-mobile">
+                    <div class="menu">
+                        <i id="manu" class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <img src="./image/logo.png" alt="">
+                    </div>
+                    <div class="dropdown-setting-mobile">
+                        <button onclick="settingmobileFunction()" class="dropbtn-setting-mobile">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div id="mydropdown-setting-mobile" class="dropdown-content-setting-mobile">
+                            <a href="#">
+                                <span>My account</span>
+                            </a>
+                            <a href="#">
+                                <span>Check out</span>
+                            </a>
+                            <a href="#">
+                                <span>Sign in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="under-mobile">
+                    <div class="search">
+                        <select class="select" name="poscats">
+                            <option value="0">All categories</option>
+                                                <option value="68">
+                            Electronics
+                            </option>
+                                                <option value="69">
+                            - -  Accessories &amp; Parts
+                            </option>
+                                                <option value="75">
+                            - - - -  Cables &amp; Adapters
+                            </option>
+                                                <option value="76">
+                            - - - -  Batteries
+                            </option>
+                                                <option value="77">
+                            - - - -  Chargers
+                            </option>
+                                                <option value="78">
+                            - - - -  Bags &amp; Cases
+                            </option>
+                                                <option value="79">
+                            - - - -  Electronic Cigarettes
+                            </option>
+                                                        <option value="70">
+                            - -  Audio &amp; Video
+                            </option>
+                                                <option value="80">
+                            - - - -  Televisions
+                            </option>
+                                                <option value="81">
+                            - - - -  TV Receivers
+                            </option>
+                                                <option value="82">
+                            - - - -  Projectors
+                            </option>
+                                                <option value="83">
+                            - - - -  Audio Amplifier Boards
+                            </option>
+                                                <option value="84">
+                            - - - -  TV Sticks
+                            </option>
+                                                        <option value="71">
+                            - -  Camera &amp; Photo
+                            </option>
+                                                <option value="85">
+                            - - - -  Digital Cameras
+                            </option>
+                                                <option value="86">
+                            - - - -  Camcorders
+                            </option>
+                                                <option value="87">
+                            - - - -  Camera Drones
+                            </option>
+                                                <option value="88">
+                            - - - -  Action Cameras
+                            </option>
+                                                <option value="89">
+                            - - - -  Photo Studio Supplies
+                            </option>
+                                                        <option value="72">
+                            - -  Portable Audio &amp; Video
+                            </option>
+                                                <option value="90">
+                            - - - -  Headphones
+                            </option>
+                                                <option value="91">
+                            - - - -  Speakers
+                            </option>
+                                                <option value="92">
+                            - - - -  MP3 Players
+                            </option>
+                                                <option value="93">
+                            - - - -  VR/AR Devices
+                            </option>
+                                                <option value="94">
+                            - - - -  Microphones
+                            </option>
+                                                        <option value="73">
+                            - -  Smart Electronics
+                            </option>
+                                                <option value="95">
+                            - - - -  Wearable Devices
+                            </option>
+                                                <option value="96">
+                            - - - -  Smart Home Appliances
+                            </option>
+                                                <option value="97">
+                            - - - -  Smart Remote Controls
+                            </option>
+                                                <option value="98">
+                            - - - -  Smart Watches
+                            </option>
+                                                <option value="99">
+                            - - - -  Smart Wristbands
+                            </option>
+                                                        <option value="74">
+                            - -  Video Games
+                            </option>
+                                                <option value="100">
+                            - - - -  Handheld Game Players
+                            </option>
+                                                <option value="101">
+                            - - - -  Game Controllers
+                            </option>
+                                                <option value="102">
+                            - - - -  Joysticks
+                            </option>
+                                                <option value="103">
+                            - - - -  Stickers
+                            </option>
+                        </select>
+                        <input type="text" placeholder="Enter your search key......">
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-top">
+                <img src="./image/logo.png" alt="">
+                <div class="search">
+                    <select class="select" name="poscats">
+                        <option value="0">All categories</option>
+                                            <option value="68">
+                        Electronics
+                        </option>
+                                            <option value="69">
+                        - -  Accessories &amp; Parts
+                        </option>
+                                            <option value="75">
+                        - - - -  Cables &amp; Adapters
+                        </option>
+                                            <option value="76">
+                        - - - -  Batteries
+                        </option>
+                                            <option value="77">
+                        - - - -  Chargers
+                        </option>
+                                            <option value="78">
+                        - - - -  Bags &amp; Cases
+                        </option>
+                                            <option value="79">
+                        - - - -  Electronic Cigarettes
+                        </option>
+                                                    <option value="70">
+                        - -  Audio &amp; Video
+                        </option>
+                                            <option value="80">
+                        - - - -  Televisions
+                        </option>
+                                            <option value="81">
+                        - - - -  TV Receivers
+                        </option>
+                                            <option value="82">
+                        - - - -  Projectors
+                        </option>
+                                            <option value="83">
+                        - - - -  Audio Amplifier Boards
+                        </option>
+                                            <option value="84">
+                        - - - -  TV Sticks
+                        </option>
+                                                    <option value="71">
+                        - -  Camera &amp; Photo
+                        </option>
+                                            <option value="85">
+                        - - - -  Digital Cameras
+                        </option>
+                                            <option value="86">
+                        - - - -  Camcorders
+                        </option>
+                                            <option value="87">
+                        - - - -  Camera Drones
+                        </option>
+                                            <option value="88">
+                        - - - -  Action Cameras
+                        </option>
+                                            <option value="89">
+                        - - - -  Photo Studio Supplies
+                        </option>
+                                                    <option value="72">
+                        - -  Portable Audio &amp; Video
+                        </option>
+                                            <option value="90">
+                        - - - -  Headphones
+                        </option>
+                                            <option value="91">
+                        - - - -  Speakers
+                        </option>
+                                            <option value="92">
+                        - - - -  MP3 Players
+                        </option>
+                                            <option value="93">
+                        - - - -  VR/AR Devices
+                        </option>
+                                            <option value="94">
+                        - - - -  Microphones
+                        </option>
+                                                    <option value="73">
+                        - -  Smart Electronics
+                        </option>
+                                            <option value="95">
+                        - - - -  Wearable Devices
+                        </option>
+                                            <option value="96">
+                        - - - -  Smart Home Appliances
+                        </option>
+                                            <option value="97">
+                        - - - -  Smart Remote Controls
+                        </option>
+                                            <option value="98">
+                        - - - -  Smart Watches
+                        </option>
+                                            <option value="99">
+                        - - - -  Smart Wristbands
+                        </option>
+                                                    <option value="74">
+                        - -  Video Games
+                        </option>
+                                            <option value="100">
+                        - - - -  Handheld Game Players
+                        </option>
+                                            <option value="101">
+                        - - - -  Game Controllers
+                        </option>
+                                            <option value="102">
+                        - - - -  Joysticks
+                        </option>
+                                            <option value="103">
+                        - - - -  Stickers
+                        </option>
+                    </select>
+                    <input type="text" placeholder="Enter your search key......">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="contact-link">
+                    <div class="call">
+                        <a href="#">
+                            <i class="fas fa-phone-volume"></i>
+                        </a>
+                     </div>
+                    <div class="phone">
+                        <p>Call Us:</p>
+                        <a href="#">+885 888737756</a>
+                    </div>
+                </div>
+                <div class="icon-static">
+                    <a href="#">
+                        <i class="fas fa-random"></i>
+                        <span class="number-on">0</span>
+                    </a>
+                    <a href="#">
+                        <i class="far fa-heart"></i>
+                        <span class="number-on">0</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="number-on">0</span>
+                        <span class="item-total">$0.00</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle-nav">
+                <div class="mid-nav-left">
+                    <div class="mid-nav-left-left">
+                        <div class="dropdown-nav">
+                            <button onclick="yourFunction()" class="dropbtn-nav">
+                                <i id="manu" class="fas fa-bars"></i>
+                                <span>All CATEGORIES</span>
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <div id="mydropdown-nav" class="dropdown-content-nav">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>Electronics</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                        <div class="slide-drop1">
+                                            <div class="slide-drop1-container">
+                                                <div class="left-1">
+                                                    <ul>
+                                                        <li><a href=""><span>Accessories & Parts</span></a></li>
+                                                        <li><a href="#">Cables & Adapter</a></li>
+                                                        <li><a href="#">Batteries</a></li>
+                                                        <li><a href="#">Chargers</a></li>
+                                                        <li><a href="#">Bags & Cases</a></li>
+                                                        <li><a href="#">Electronic Cigarettes</a></li>
+                                                        <li><a href=""><span>Audio & Video</span></a></li>
+                                                        <li><a href="#">Televisons</a></li>
+                                                        <li><a href="#">TV Receivers</a></li>
+                                                        <li><a href="#">Projectors</a></li>
+                                                        <li><a href="#">Audio Amplifiers Boards</a></li>
+                                                        <li><a href="#">TV Sticks</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="mid-1">
+                                                    <ul>
+                                                        <li><a href=""><span>Camera & Photo</span></a></li>
+                                                        <li><a href="">Digital Cameras</a></li>
+                                                        <li><a href="">Camcorder</a></li>
+                                                        <li><a href="">Camera Drones</a></li>
+                                                        <li><a href="">Action Cameras</a></li>
+                                                        <li><a href="">Photo Studio Supplies</a></li>
+                                                        <li><a href=""><span>Portable Audio & Video</span></a></li>
+                                                        <li><a href="">Headphones</a></li>
+                                                        <li><a href="">Speakers</a></li>
+                                                        <li><a href="">MP3 Players</a></li>
+                                                        <li><a href="">VR/AR Devices</a></li>
+                                                        <li><a href="">Microphones</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="right-1">
+                                                <ul>
+                                                    <li><a href=""><span>Smart Electronics</span></a></li>
+                                                    <li><a href="">Wearable Devices</a></li>
+                                                    <li><a href="">Smart Home Appliances</a></li>
+                                                    <li><a href="">Smart Remote Controls</a></li>
+                                                    <li><a href="">Smart Watches</a></li>
+                                                    <li><a href="">Smart Wristbands</a></li>
+                                                    <li>
+                                                        <a href="">
+                                                            <img src="./image/banner-vega.jpg" alt="">
+                                                        </a>
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Video Games</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                        <div class="slide-drop2">
+                                            <div class="slide-drop2-container">
+                                                <div class="left-1">
+                                                    <ul>
+                                                        <li><a href="#">Handheld Game players</a></li>
+                                                        <li><a href="#">Game Controllers</a></li>
+                                                        <li><a href="#">Joysticks</a></li>
+                                                        <li><a href="#">Stickers</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Televisons</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Degital Cameras</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Headphones</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                       
+                                        <a href="#">
+                                            <span>Wearable Devices</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Smart Watches</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Game Controllers</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Smart Home Appliances</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>+More Categories</span>
+                                        </a>
+                                    </li>
+                                </ul>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mid-nav-left-right">
+                        <ul class="navbar">
+                            <li><a class="active" href="home.html">HOME</a></li>
+                            <li><a href="home.html">NEW PRODUCTS</a></li>
+                            <li><a href="home.html">BEST SALES</a></li>
+                            <li><a href="home.html">PRICES DROP</a></li>
+                            <li><a href="home.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mid-nav-right">
+                    <span>Free Shipping on Orders $50+</span>
+                </div>
+            </div>
+            <div class="middle-main">
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="banner-caption">
+                              <i>WIRELESS BLUETHOOD GAMING</i>
+                              <h3>Bluethood Gamepad</h>
+                              <h1>IPEGA PG-9023</h1>
+                            <button>
+                                <a href="#"> SHOP NOW</a>
+                            </button>
+                          </div>
+                          <img src="./image/big_banner1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="banner-caption">
+                            <i>NEW DESIGN FEATURE</i>
+                            <h3>Samsung Galaxy</h3>  
+                            <h1>S10+ Egde</h1>
+                          <button>
+                              <a href="#"> SHOP NOW</a>
+                             
+                          </button>
+                        </div>
+                          <img src="./image/big_banner2.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination1 "></div>
+                </div>
+                <div class="icon-mid">
+                    <div class="icon-info">
+                        <div class="icon-image">
+                            <img src="./image/icon_cms1.png" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h3>Free Shipping</h3>
+                            <span>On all orders over $75.00</span>
+                        </div>
+                    </div>
+                    <div class="icon-info">
+                        <div class="icon-image">
+                            <img src="./image/icon_cms2.png" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h3>Free Returns</h3>
+                            <span>Returns are free within 9 days</span>
+                        </div>
+                    </div>
+                    <div class="icon-info">
+                        <div class="icon-image">
+                            <img src="./image/icon_cms3.png" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h3>Support 24/7</h3>
+                            <span>Contact us 24 hours a day</span>
+                        </div>
+                    </div>
+                    <div class="icon-info">
+                        <div class="icon-image">
+                            <img src="./image/icon_cms4.png" alt="">
+                        </div>
+                        <div class="icon-text">
+                            <h3>100% Payment Secure</h3>
+                            <span>Your payment are safe with us</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner3">
+                    <div class="banner3-image">
+                        <a href="#"><img src="./image/banner3_1.jpg" alt=""></a>
+                    </div>
+                    <div class="banner3-image">
+                        <a href="#"><img src="./image/banner3_2.jpg" alt=""></a>
+                    </div>
+                    <div class="banner3-image">
+                        <a href="#"><img src="./image/banner3_3.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-detail">
+                        <h2>Popular Accessories</h2>
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="card">
+                                      <div class="pro-image">
+                                        <img src="./image/thumb-1.jpg" alt="">
+                                      </div>
+                                      <div class="pro-caption">
+                                        <h3>Smart Electonics</h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">Wearable Devices</a>
+                                            <a href="#">Smart Home Appliances</a>
+                                            <a href="#">Smart Remote Controls</a>
+                                            <a href="#">Smart Watches</a>
+                                        </div>
+                                      </div>
+                                      <button class="btn-view">View All</button>
+                                  </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-3.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-4.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-5.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-6.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="pro-image">
+                                      <img src="./image/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption">
+                                      <h3>Smart Electonics</h3>
+                                      <div class="pro-caption-link">
+                                          <a href="#">Wearable Devices</a>
+                                          <a href="#">Smart Home Appliances</a>
+                                          <a href="#">Smart Remote Controls</a>
+                                          <a href="#">Smart Watches</a>
+                                      </div>
+                                    </div>
+                                    <button class="btn-view">View All</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2"></div>
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                          </div>
+                    </div>
+                    <div class="product-detail">
+                        <h2>Featured Products</h2>
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="card-2">
+                                      <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                        <img src="./image/product/pro-1.jpg" alt="">
+                                      </div>
+                                      <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                      </div>
+                                      <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                     </div>
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-2.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon-gold">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                   </div>
+                                      
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-3.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                      
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-4.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon-gold">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                      
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-5.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon-gold">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-6.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                    
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-7.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                      
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-8.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                        <div class="price"><span>$29.00</span></div>
+                                        <div class="btn-card">
+                                              <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                              <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                              <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                        </div> 
+                                  </div>
+                                     
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-2">
+                                    <div class="pro-image-2">
+                                        <div class="new"><span>New</span></div>
+                                        <div class="icon-zoom">
+                                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        </div>  
+                                      <img src="./image/product/pro-9.jpg" alt="">
+                                    </div>
+                                    <div class="pro-caption-2">
+                                        <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                        <div class="pro-caption-link">
+                                            <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="under-card">
+                                          <div class="price"><span>$29.00</span></div>
+                                          <div class="btn-card">
+                                                <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                          </div> 
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2"></div>
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                          </div>
+                    </div>
+                    <div class="product-detail-3">
+                        <h2>Deal Of The Day</h2>
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="card-3">
+                                      <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="new"><span>New</span></div>
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-1.jpg" alt="">
+                                            </div>
+                                       
+                                            <div class="btn-card">
+                                            <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                            <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                            <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                        </div> 
+                                      <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                          </div>
+                                          <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                           
+                                         </div>
+                                      </div>
+                                      
+                                      
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-3">
+                                    <div class="card-left">
+                                          <div class="pro-image-3">
+                                              <div class="new"><span>New</span></div>
+                                              <div class="icon-zoom">
+                                                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                              </div>  
+                                              <img src="./image/product/pro-2.jpg" alt="">
+                                          </div>
+                                     
+                                          <div class="btn-card">
+                                          <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                          <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                          <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                          </div> 
+                                      </div> 
+                                    <div class="card-right">
+                                      <div class="pro-caption-2">
+                                          <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                          <div class="pro-caption-link">
+                                              <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                          </div>
+                                          <div class="icon">
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                          </div>
+                                        </div>
+                                        <div class="under-card">
+                                          <div class="price"><span>$29.00</span></div>
+                                         
+                                       </div>
+                                    </div>
+                                    
+                                    
+                               </div>
+                            </div>
+                             
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2"></div>
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                          </div>
+                    </div>
+                    <div class="big-banner">
+                        <div class="big-banner-pro">
+                            <a href="#"> <img src="./image/product-2/cms.jpg" alt=""></a>
+                           
+                        </div>                     
+                    </div>
+                    <div class="product-detail">
+                        <h2>Audio & Video</h2>
+                        <div class="product-detail-4">
+                            <div class="pro-left-image">
+                                <div class="left-image">
+                                    <a href="#"><img src="./image/product-2/thumb-1.jpg" alt=""></a>
+                                </div>
+                               
+                            </div>
+                            <div class="swiper mySwiper4">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="card-2">
+                                          <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                            <img src="./image/product/pro-1.jpg" alt="">
+                                          </div>
+                                          <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                          </div>
+                                          <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                         </div>
+                                     </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-2.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon-gold">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                       </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-3.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-4.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon-gold">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-5.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon-gold">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-6.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                        
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-7.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-8.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                         
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-9.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                              <div class="price"><span>$29.00</span></div>
+                                              <div class="btn-card">
+                                                    <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                    <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                    <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                              </div> 
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-button-next swiper-button-next2"></div>
+                                <div class="swiper-button-prev swiper-button-prev2"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="product-detail">
+                        <h2>Camera & Photo</h2>
+                        <div class="product-detail-4">
+                            <div class="pro-left-image">
+                                <div class="left-image">
+                                    <a href="#"><img src="./image/product-2/thumb-2.jpg" alt=""></a>
+                                </div>
+                               
+                            </div>
+                            <div class="swiper mySwiper4">
+                                <div class="swiper-wrapper">
+                                
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-4.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon-gold">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-5.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon-gold">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-6.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                        
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-7.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                          
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-8.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                            <div class="price"><span>$29.00</span></div>
+                                            <div class="btn-card">
+                                                  <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                  <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                  <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                            </div> 
+                                      </div>
+                                         
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card-2">
+                                        <div class="pro-image-2">
+                                            <div class="new"><span>New</span></div>
+                                            <div class="icon-zoom">
+                                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                            </div>  
+                                          <img src="./image/product/pro-9.jpg" alt="">
+                                        </div>
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="under-card">
+                                              <div class="price"><span>$29.00</span></div>
+                                              <div class="btn-card">
+                                                    <button class="btn"><a href="#">ADD TO CARD</a></button>    
+                                                    <button class="btn"><a href=""><i class="fa-regular fa-heart"></i></a></button>    
+                                                    <button class="btn"><a href="#"><i class="fa-solid fa-shuffle"></i></a></button>   
+                                              </div> 
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-button-next swiper-button-next2"></div>
+                                <div class="swiper-button-prev swiper-button-prev2"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-slider">
+                        <div class="swiper mySwiper5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./image/logo-slider/7.jpg" alt="">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2"></div>
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                        </div>
+                    </div>
+                    <div class="product-detail-3">
+                        <h2>Recently Added</h2>
+                        <div class="swiper mySwiper6">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <div class="card-3">
+                                      <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-1.jpg" alt="">
+                                            </div>
+                                       
+                                        </div> 
+                                      <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                          </div>
+                                          <div class="under-card">
+                                            <div class="price">$29.00</div>
+                                           
+                                         </div>
+                                      </div>
+                                      
+                                      
+                                 </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card-3">
+                                    <div class="card-left">
+                                          <div class="pro-image-3">
+                                              <div class="icon-zoom">
+                                                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                              </div>  
+                                              <img src="./image/product/pro-9.jpg" alt="">
+                                          </div>
+                                     
+                                      </div> 
+                                    <div class="card-right">
+                                      <div class="pro-caption-2">
+                                          <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                          <div class="pro-caption-link">
+                                              <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                          </div>
+                                          <div class="icon">
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                              <i class="fa-solid fa-star"></i>
+                                          </div>
+                                        </div>
+                                        <div class="under-card">
+                                          <div class="price">$29.00</div>
+                                         
+                                       </div>
+                                    </div>
+                                    
+                                    
+                               </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-3">
+                                        <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-5.jpg" alt="">
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <div class="under-card">
+                                            <div class="price">$29.00</div>
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-3">
+                                        <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-3.jpg" alt="">
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <div class="under-card">
+                                            <div class="price">$29.00</div>
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-3">
+                                        <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-7.jpg" alt="">
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <div class="under-card">
+                                            <div class="price">$29.00</div>
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card-3">
+                                        <div class="card-left">
+                                            <div class="pro-image-3">
+                                                <div class="icon-zoom">
+                                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                </div>  
+                                                <img src="./image/product/pro-6.jpg" alt="">
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="card-right">
+                                        <div class="pro-caption-2">
+                                            <h3><a href="#">GRAPHIC CONRNER</a></h3>
+                                            <div class="pro-caption-link">
+                                                <a href="#">New Banlace Fresh Foam Arishi Sport 2</a>
+                                            </div>
+                                            <div class="icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <div class="under-card">
+                                            <div class="price">$29.00</div>
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                </div>
+                                </div>
+                             
+                            </div>
+                            <div class="swiper-button-next swiper-button-next2"></div>
+                            <div class="swiper-button-prev swiper-button-prev2"></div>
+                        </div>
+                    </div>
+                    <div class="banner3 banner2">
+                        <div class="banner2-image">
+                            <a href="#"><img src="./image/banner2/1.jpg" alt=""></a>
+                        </div>
+                        <div class="banner2-image">
+                            <a href="#"><img src="./image/banner2/2.jpg" alt=""></a>
+                        </div>
+                       
+                    </div>
+                    <footer>
+                        <div class="col">
+                            <img class="logo" width="130px"src="./image/logo.png" alt="logo">
+                            <h4>Contact</h4>
+                            <p><strong>Address: </strong>Tourism City ,9W43+979, Siem Reap</p>
+                            <p><strong>Phone: </strong>+885 89555201  +885 888737756</p>
+                            <p><strong>Hours: </strong>8:00am-5:00pm, Mon-Sat</p>
+                          
+                        </div>
+                        <div class="col">
+                            <h4>About</h4>
+                            <a href="#">About Us</a>
+                            <a href="#">Delivery Information</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="col">
+                            <h4>My Account</h4>
+                            <a href="#">Sign In</a>
+                            <a href="#">View Cart</a>
+                            <a href="#">My Wishlist</a>
+                            <a href="#">Track My Order</a>
+                            <a href="#">Help</a>
+                        </div>
+                        <div class="col install">
+                            <h4>Install App</h4>
+                            <p>From App Store or Google Play</p>
+                            <div class="row">
+                                <img src="./image/pay/app.jpg" alt="">
+                                <img src="./image/pay/play.jpg" alt="">
+                            </div>
+                            <div class="newletter">
+                                <div class="letter">
+                                    <h2>Sign Up For Newletters</h2>
+                                    <p>Get E-mail updates about our latest shop and <span>specail offer</span>.  </p>
+                                </div>
+                                <div class="form">
+                                    <input type="text" placeholder=" Your email address">
+                                    <button class="normal">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="follow">
+                                <div class="icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-tiktok"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2022.Chhinlong Ezzhop Ecommerce</p>
+                            <img src="./image/pay/pay.png" alt="">
+                        </div>
+                    </footer>
+                    
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
