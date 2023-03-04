@@ -3,6 +3,7 @@
     --brown:#522E2D;
     --brown2:#481c1a;
     --brown-red:#992E2B;
+    --brown-red-rgba:#992f2b68;
     --text-brown: #C0C0C0;
     --color-default:#004f83;
     --color-second:#0067ac;
@@ -84,6 +85,12 @@
   color: black;
 }
 
+.bg-brown-red-rgba{
+  background-color: var(--brown-red-rgba);
+}
+.text-brown-red-rgba{
+  color: var(--brown-red-rgba);
+}
 .bg-brown{
     background-color: var(--brown);
 }
@@ -116,10 +123,15 @@
   right: 30px;
   display: none;
   z-index: 100;
-  transition: ease-in-out .9s;
+  transition: ease-in-out .1s;
   padding: 10px;
   border-radius: 7px;
   border: none;
+  background-color: var(--brown-red-rgba);
+  color: var(--color-white);
+}
+#myBtn:hover{
+  
   background-color: var(--brown-red);
   color: var(--color-white);
 }
