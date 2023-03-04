@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Dashboard</title>
+</head>
+<body class="light">
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="../image/logo.png" alt="">
+                <h4>Ezzhop</h4>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li><a class="active"href="Dashboard.html"><i class="fa-solid fa-gauge"></i><b>Dashboard</b></a></li>
+                    <li><a href="employees/employee-index.html"><i class="fa-solid fa-user-group"></i><b>Employees</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bezier-curve"></i><b>Department</b></a></li>
+                    <li><a href="#"><i class="fa-regular fa-calendar-xmark"></i><b>Holidays</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-person-walking-arrow-right"></i><b>Leave request</b></a></li>
+                    <li><a href="#"><i  class="fa-solid fa-calendar-days "></i><b>Schedeule</b></a></li>
+                    <li><a href="#"><i id="report" class="fa-solid fa-clipboard-list"></i><b>Report</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i><b>Setting</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><b>Logout</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-side">
+            <div class="headbar">
+                <div class="headbar-left">
+                    <form action="">
+                        <input class="search" type="text" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="headbar-right">
+                    <div class="icon-side">
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="user-side">
+                        <h5>Admin@gmail.com</h5>
+                        <img src="../image/user.png" alt="">
+                    </div>
+                    <div class="toggle">
+                        <span>Dark Mode</span>
+                        <div class="dark-mode-switch">
+                            <div class="dark-mode-switch-ident"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="navtivicate">
+                    <div class="navicat">
+                        <div class="fnav">
+                            <span>Dashboard</span>
+                        </div>
+                        <div class="snav">
+
+                        </div>
+                       
+                    </div>
+                    <div class="btn-side-nav">
+
+                    </div>
+                    
+                </div>
+                <div class="dashboard">
+                    <div class="item t-attendance">
+                        <div class="image">
+                            <img src="../image/attendance.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>450</h4>
+                            <p>Total attendance</p>
+                        </div>   
+                    </div>
+                    <div class="item t-present">
+                        <div class="image">
+                            <img src="../image/present.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>30</h4>
+                            <p>Total prensent</p>
+                        </div>   
+                    </div>
+                    <div class="item t-late">
+                        <div class="image">
+                            <img src="../image/late.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>5</h4>
+                            <p>The late total</p>
+                        </div>   
+                    </div>
+                    <div class="item t-request">
+                        <div class="image">
+                            <img src="../image/request.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>45</h4>
+                            <p>Request total</p>
+                        </div>   
+                    </div>
+                    <div class="item t-holiday">
+                        <div class="image">
+                            <img src="../image/holiday.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h4>50</h4>
+                            <p>Holiday total</p>
+                        </div>   
+                    </div>
+                    <div class="item1 calendar ">
+                            <div class="calendar-header">
+                                <span class="month-picker" id="month-picker">February</span>
+                                <div class="year-picker">
+                                    <span class="year-change" id="prev-year">
+                                        <pre><</pre>
+                                    </span>
+                                    <span id="year">2021</span>
+                                    <span class="year-change" id="next-year">
+                                        <pre>></pre>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-week-day">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div class="calendar-days"></div>
+                            </div>
+                            <div class="calendar-footer">
+                            </div>
+                            <div class="month-list"></div>
+                    
+                    </div>
+                    <div class="item1 check-in-ov">
+                        <canvas id="myChart-in" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                    <div class="item1 top-emp">
+                        <div class="head-item">
+                            <h4>Top employees</h4> 
+                        </div>
+                        <div class="main-item">
+                            <table class="table">
+                                <thead class="thead">
+                                    <tr>
+                                        <th><b>Employee</b></th>
+                                        <th><b>Check-in</b></th>
+                                        <th><b>Check-out</b></th>
+                                        <th><b>Worked</b></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chhinlong</td>
+                                        <td>8:00AM</td>
+                                        <td>5:00PM</td>
+                                        <td>8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chhinlong</td>
+                                        <td>8:00AM</td>
+                                        <td>5:00PM</td>
+                                        <td>8:00:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chhinlong</td>
+                                        <td>8:00AM</td>
+                                        <td>5:00PM</td>
+                                        <td>8:00:00</td>
+                                    </tr>
+                                    <tr >
+                                        <td>Chhinlong</td>
+                                        <td>8:00AM</td>
+                                        <td>5:00PM</td>
+                                        <td>8:00:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item1 active-pro ">
+                        <div class="head-item">
+                            <h4>Active User</h4> 
+                        </div>
+                        <div class="justify-center">
+                            <div class="skill justify-center">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number1">
+                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                       <linearGradient id="GradientColor">
+                                          <stop offset="0%" stop-color="#e91e63" />
+                                          <stop offset="100%" stop-color="#673ab7" />
+                                       </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="47" stroke-linecap="round" />
+                            </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="item1 check-out-ov">
+                        <canvas id="myChart-out" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                    <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum earum dicta consequatur dolorum eveniet quidem voluptatum praesentium voluptate unde quas, odit impedit sit reprehenderit quibusdam quod. Totam similique sapiente mollitia!</div>
+
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employees-edit</title>
+    <link rel="stylesheet" href="employee.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<body>
+    <div class="">
+        <div class="mt-10 flex ml-20">
+            <a href="employee-index.html"><button class="btn btn-primary ">Back to list</button></a>                   
+        </div>
+        
+        <div class="form card-center w-50 card">
+            <form action="" class="">
+                <div class="m-6 justify-between flex">
+                    <label for="name" class="label mr-10 ">Name</label>
+                    <input type="text" name="name" class="form-control ">
+                </div>
+                <div class="m-6 justify-between flex">
+                    <label for="email" class="label mr-10">Email</label>
+                    <input type="text" name="email" class="form-control">
+                </div>
+                <div class="m-6 justify-between flex">
+                    <label for="phone" class="label mr-10">Phone</label>
+                    <input type="tel" name="phone" class="form-control" id="phone">
+                </div>
+                <div class="m-6 justify-between flex ">
+                    <label for="Department" class="label ">Department</label>
+                    <select name="Department" id="Department" class="form-control text .bg-white">
+                        <option value="1" class="text">Graphic Designer</option>
+                        <option value="2" class="text">UX/UI Designer</option>
+                        <option value="3" class="text">Web Developer</option>
+                    </select>
+                </div>
+                <div class="m-6 justify-between flex">
+                    <label for="status" class="label ">Status</label>
+                    <select name="status" id="status" class="form-control text .bg-white" >
+                        <option value="1">Active </option>
+                        <option value="2">Inactive</option>
+                    </select>
+                </div>
+                <div class="m-6 justify-between flex">
+                    <label for="password" class="label mr-10">Password</label>
+                    <input type="password" name="password" class="form-control" >
+                </div>
+                <div class="m-6 item-end">
+                    <a href="employee-index.html"><button type="submit"class=" btn btn-primary">Save</button></a>
+                    <a href="employee-index.html"><button class=" btn">Cancel</button></a>
+                </div>
+               
+
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+</html>

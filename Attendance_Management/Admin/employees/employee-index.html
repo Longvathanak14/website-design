@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="employee.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+    <title>Employees-list</title>
+</head>
+<body class="light">
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="../image/logo.png" alt="">
+                <h4>Ezzhop</h4>
+            </div>
+            <div class="sidebar-list">
+                <ul>
+                    <li><a href="../Dashboard.html"><i class="fa-solid fa-gauge"></i><b>Dashboard</b></a></li>
+                    <li><a  class="active" href="./employee-index.html"><i class="fa-solid fa-user-group"></i><b>Employees</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bezier-curve"></i><b>Department</b></a></li>
+                    <li><a href="#"><i class="fa-regular fa-calendar-xmark"></i><b>Holidays</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-person-walking-arrow-right"></i><b>Leave request</b></a></li>
+                    <li><a href="#"><i  class="fa-solid fa-calendar-days "></i><b>Schedeule</b></a></li>
+                    <li><a href="#"><i id="report" class="fa-solid fa-clipboard-list"></i><b>Report</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i><b>Setting</b></a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><b>Logout</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-side">
+            <div class="headbar">
+                <div class="headbar-left">
+                    <form action="">
+                        <input class="search" type="text" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="headbar-right">
+                    <div class="icon-side">
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="user-side">
+                        <h5>Admin@gmail.com</h5>
+                        <img src="../image/user.png" alt="">
+                    </div>
+                    <div class="toggle">
+                        <span>Dark Mode</span>
+                        <div class="dark-mode-switch">
+                            <div class="dark-mode-switch-ident"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="navtivicate">
+                    <div class="navicat">
+                        <div class="fnav">
+                            <span>Employees</span>
+                        </div>
+                        <div class="snav">
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="btn-side-nav">
+                        <div class="">
+                            <button class="btn"><a href="#">Import to Excel file</a></button>
+                        </div>
+                        <div class="">
+                            <button class="btn"><a href="#">Import to Excel file</a></button>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-primary" id="show-emp-create">Add new employee</button>
+                            <div class="popup">
+                            
+                                <div class="form card-center form-control-head">
+                                    <form action="" class="">
+                                        <div class="m-6 justify-between flex">
+                                            <label for="name" class="label mr-10 ">Name</label>
+                                            <input type="text" name="name" class="form-control ">
+                                        </div>
+                                        <div class="m-6 justify-between flex">
+                                            <label for="email" class="label mr-10">Email</label>
+                                            <input type="text" name="email" class="form-control">
+                                        </div>
+                                        <div class="m-6 justify-between flex">
+                                            <label for="phone" class="label mr-10">Phone</label>
+                                            <input type="tel" name="phone" class="form-control" id="phone">
+                                        </div>
+                                        <div class="m-6 justify-between flex">
+                                            <label for="Department" class="label ">Department</label>
+                                            <select name="Department" id="Department" class="form-control text ">
+                                                <option value="1" class="text">Graphic Designer</option>
+                                                <option value="2" class="text">UX/UI Designer</option>
+                                                <option value="3" class="text">Web Developer</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-6 justify-between flex">
+                                            <label for="status" class="label ">Status</label>
+                                            <select name="status" id="status" class="form-control text">
+                                                <option value="1">Active </option>
+                                                <option value="2">Inactive</option>
+                                            </select>
+                                        </div>
+                                        <div class="m-6 justify-between flex">
+                                            <label for="password" class="label mr-10">Password</label>
+                                            <input type="password" name="password" class="form-control" required>
+                                        </div>
+                                        <div class="m-6 item-end">
+                                            <button type="submit"class="close-btn btn btn-primary">Add</button>
+                                            <button class="close-btn btn">Cancel</button>
+                                        </div>
+                                       
+
+                                    </form>
+                                </div>
+                            </div>
+                            <!--Trigger-->
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="tab">
+                    <div class="tab1 "><span><a class="tab1-active" href="#"> All (586)</a></span></div>
+                    <div class="tab1"><span><a href="#">Active (500)</a> </span></div>
+                    <div class="tab1"><span><a href="#">Inactive (86)</a> </span></div>
+                    <div class="tab1"></div>
+                </div>
+                <div class="emp-list">
+                    
+                    <div class="item1 top-emp">
+                        <div class="head-item">
+                            <div class="head-item-left">
+                                <select name="" id="" class="btn">
+                                    <option value="1">Bulk Action</option>
+                                </select>
+                                <button class="btn btn-primary">Apply</button>
+                            </div>
+                            <div class="head-item-right">
+                                <form class="search-form search" action="">
+                                        <input type="text" name="" id="search" placeholder="search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>                                 
+                                </form>
+                            </div>
+                        </div>
+                        <div class="main-item field">
+                            <table class="table">
+                                <thead class="thead">
+                                    <tr>
+                                        <th>
+                                            <div class="emp-name">
+                                                <input type="checkbox" id="selectAll">
+                                                <b>Employee</b>
+                                            </div>                                          
+                                        </th>
+                                        <th><b>Phone</b></th>
+                                        <th><b>Department</b></th>
+                                        <th><b>Status</b></th>
+                                        <th><b>Action</b></th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span>
+                                                    
+                                                </a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span>
+                                                    
+                                                </a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Chhinlong</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>UX/UI Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="emp-name">
+                                            <input type="checkbox">
+                                            <b>Suy Try</b>
+                                            </div>                      
+                                        </td>
+                                        <td>0888737756</td>
+                                        <td>Graphic Desinger</td>
+                                        <td>
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </td>
+                                        <td>
+                                            <div class="action">
+                                                <a href=""><span class="material-symbols-outlined">
+                                                    visibility
+                                                    </span></a>
+                                                <a href="employee-edit.html"><span class="material-symbols-outlined">
+                                                    edit_note
+                                                    </span></a>
+                                                <a href=""><span class="material-symbols-outlined">delete</span></a>
+                                            </div>
+                                           
+                                        </td>
+                                    </tr>
+                                    
+                                   
+                                </tbody>
+                            </table>
+                            <div class="emp-list-footer">
+                                <div class="items-controller">
+                                    <h5>Show in row</h5>
+                                    <select name="" id="itemperpage">
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="08" selected>08</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                    </select>                               
+                                </div>
+                                <div class="bottom-field">
+                                    <ul class="pagination">
+                                      <li class="prev"><a href="#" id="prev">&#139;</a></li>
+                                        <!-- page number here -->
+                                      <li class="next"><a href="#" id="next">&#155;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="../admin.js"></script>
+    <script src="employee.js"></script>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
+</html>
