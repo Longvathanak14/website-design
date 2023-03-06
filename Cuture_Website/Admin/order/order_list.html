@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../../image/LOGO1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <title>Product</title>
+    <title>Order</title>
 </head>
 <body id="page-top">
 
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-layer-group"></i>
@@ -86,7 +86,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="../../Admin/order/order_list.html">
                     <i class="fa-solid fa-shopping-cart"></i>
                     <span>Order</span></a>
@@ -111,13 +111,13 @@
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column bg-light">
+        <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow-sm">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -350,84 +350,98 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid tranx">
+                <div class="container-fluid trany">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <div class="pt-title ">
-                            <p class="fs-6"><a href="../product/product_list.html" class="fs-5 text-danger">Product</a> <i class="fa-solid fa-chevron-right"></i> Product Details</p>
-                        </div>
-                        
+                        <h1 class="h5 mb-0 text-danger">Order</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                     <!-- Content Row -->
                    <div class="row">
-                        <div class="col-12  ">
-                            <div class="row pt-options  mb-3">
-                                <div class="d-flex justify-content-end">    
-                                <a href="../product/product_edit.html" class="btn btn-dark">Edit</a>
-                                </div>
-                            </div>
-                            <div class="bg-white rounded-3 shadow-sm p-lg-4 ">
-                                <div class="row ">
-                                    <div class="col-12 bg-white">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="single-pro-img mb-4">
-                                                    <div class="mt-2">
-                                                        <img src="../../image/products/khem/khem.jpg" width="100%" id="mainImg" alt="">
-                                                    </div>
-                                                    <div class="small-img-group">
-                                                        <div class="small-img-col mt-2">
-                                                            <img src="../../image/products/khem/khem.jpg" width="100%" class="small-img" alt="">
-                                                        </div>
-                                                        <div class="small-img-col mt-2">
-                                                            <img src="../../image/products/khem/khem2.jpg" width="100%" class="small-img" alt="">
-                                                        </div>
-                                                        <div class="small-img-col mt-2">
-                                                            <img src="../../image/products/khem/khem_toch3.jpg" width="100%" class="small-img" alt="">
-                                                        </div>
-                                                        <div class="small-img-col mt-2">
-                                                            <img src="../../image/products/khem/khem_toch4.jpg" width="100%" class="small-img" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div>
+                    <div class="col-12 px-4 mb-4">
+                            <div class=" row bg-light shadow rounded-3 p-0">
+                                <table class="table table-responsive-sm table-hover align-middle mb-0 ">
                                     
-                                                    </div>
-                                                </div>
+                                    <div class="pt-breadcrumb d-flex justify-content-between  px-2">
+                                        <div class="w-50 input-group  my-3">
+                                            <input class=" form-control border-end-0 border rounded-pill " type="text" placeholder="search order" id="example-search-input">
+                                            <span class="input-group-append mx-lg-1">
+                                                <button class="btn btn-outline-secondary bg-brown text-white border-start-0 border rounded-pill ms-n3" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        
+                                        <div class="items-controller  d-flex text-center my-3">
+                                            <div>
+                                            <span class="fs-7 mx-2">Show in row</span> 
                                             </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                            <div class="single-pro-detail text-dark">
-                                                <h5>Music Instrument / Khem</h5>
-                                                <h4 class="fw-bolder my-2 text-black">Khem Tock</h4>
-                                                <div class="mt-2">
-                                                    <label class="fw-bolder text-black" for="">Category ID :</label>
-                                                    <span class="fw-bolder ">1</span>
-                                                </div>
-                                                <div class="mt-2">
-                                                    <label class="fw-bolder text-black" for="">Product quantity :</label>
-                                                    <span class="fw-bolder ">5</span>
-                                                </div>
-                                                <div>
-                                                    <label class="fw-bolder text-black">Description</label>
-                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deleniti, reprehenderitempore harum accusantium veritatis voluptas exercitationem laboriosam, inventore eveniet. Ipsum?                                
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <label class="fw-bolder text-black">Product Information</label>
-                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus deleniti, reprehenderitempore harum accusantium veritatis voluptas exercitationem laboriosam, inventore eveniet. Ipsum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste id voluptatum veritatis accusantium, ipsum distinctio officia illum nam voluptate minus aut, vel exercitationem animi sapiente veniam nihil necessitatibus libero laboriosam.                                
-                                                    </p>
-                                                </div>
-                                               
-                                                
+                                            <div>
+                                                <select name="" id="itemperpage" class="form-select">
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="08" selected>08</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                            </select>               
                                             </div>
-                                            </div> 
+                                                            
                                         </div>
                                     </div>
-                                          
+                                    <thead class=" bg-light">
+                                    
+                                    <tr>
+                                        <th class="fs-7 text-black">ID</th>
+                                        <th class="fs-7 text-black">Customer Name</th>
+                                        <th class="fs-7 text-black">Product Name</th>
+                                        <th class="fs-7 text-black">Total</th>
+                                        <th class="fs-7 text-black">Order at</th>
+                                        <th class="fs-7 text-black">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                    <tr class=" bg-white">
+                                        <td>
+                                            <span class="fs-7 fw-bold">1</span>
+                                           
+                                        </td>
+                                        <td>
+                                            <span class="fs-7 fw-bold">Chhinlong</span>
+                                        </td>      
+                                        <td>
+                                            <span class="fs-7 ">Tro Ou, Sko Thom, Khem Toch</span>
+                                        </td>    
+                                        <td>
+                                            <span class="fs-7 fw-bold"><i>$</i>580</span>
+                                        </td>    
+                                        <td>
+                                            <span class="fs-7 ">06,Mar,2023</span>
+                                        </td>    
+                                        <td> 
+                                            <span>               
+                                            <a class="btn btn-brown btn-sm rounded-pill" href="../order/order_detail.html"><i class="fa-solid fa-circle-info"></i></a>
+                                            <a class="btn btn-danger btn-sm rounded-pill" href="#"><i class="fa-solid fa-trash"></i></a>
+                                            </span> 
+                                        </td>
+                                    </tr>                           
+                                    </tbody>
+                                </table>    
+                                <div class="d-flex justify-content-end mt-3 px-2">
+                    
+                                <div class="bottom-field">
+                                    <ul class="pagination ">
+                                      <li class="prev page-item"><a href="#" id="prev">&#139;</a></li>
+                                        <!-- page number here -->
+                                      <li class="next"><a href="#" id="next">&#155;</a></li>
+                                    </ul>
                                 </div>
-                            </div>                                               
-                        </div>
+                            </div> 
+                            </div>                                  
+                      </div>
                    </div>
 
                 </div>
@@ -437,7 +451,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white mt-5">
+            <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Ez_startup</span>
@@ -471,7 +485,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="../Auth/login.html">Logout</a>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -485,24 +499,7 @@
     <!-- Custom scripts for all pages-->
     <script src="../../style/js/sb-admin-2.min.js"></script>
     <script src="../../style/js/style_admin.js"></script>
-    <script>
-        //product details image show
-            var mainImg = document.getElementById("mainImg");
-            var smallimg = document.getElementsByClassName("small-img");
-            
-            smallimg[0].onclick = function(){
-                mainImg.src=smallimg[0].src;
-            }
-            smallimg[1].onclick = function(){
-                mainImg.src=smallimg[1].src;
-            }
-            smallimg[2].onclick = function(){
-                mainImg.src=smallimg[2].src;
-            }
-            smallimg[3].onclick = function(){
-                mainImg.src=smallimg[3].src;
-            }; 
-    </script>
+
 
 </body>
 
